@@ -295,8 +295,9 @@ body {
 
 
 .how-it-works-section {
-  color: black;
-  background-color: #eeeeee;
+    color: black;
+    background-color: #dbf4ff;
+  /* background-color: #eeeeee; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -453,4 +454,27 @@ Pricing table
 .yellow-crusta.btn-lg.active {
     color: #FFFFFF;
     background-color: #cfa500;
+}
+
+#sign-up, #pricing {
+    min-height: 100%;
+}
+
+#sign-up {
+  background: url("../img/eucalyptus.jpg") no-repeat bottom center scroll;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+/* @import 'bootstrap.less'; */
+.sign-up-info {
+    /* background-color: rgba(255, 255, 255, 0.7); */
+    background-color: #ffffff;
+   padding: 25px;
+    margin: 15px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 }
