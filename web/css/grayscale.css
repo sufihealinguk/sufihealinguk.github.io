@@ -410,6 +410,7 @@ Pricing table
     font-size: 17px;
     padding: 7px 15px;
     border-bottom: solid 1px #f5f9e7;
+    /* list-style: inside url('../img/green-tick.png'); */
 }
 
 /*Pricing Footer*/
