@@ -10,7 +10,8 @@ body {
   width: 100%;
   height: 100%;
   color: black;
-  background-color: white; }
+  background-color: white;
+}
 
 html {
   width: 100%;
@@ -461,12 +462,12 @@ Pricing table
     min-height: 100%;
 }
 
-#sign-up {
-  background: url("../img/eucalyptus.jpg") no-repeat bottom center scroll;
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
+#example {
+  /* background: url("../img/eucalyptus.jpg") no-repeat bottom center scroll; */
+  /*  -webkit-background-size: cover; */
+  /*  -moz-background-size: cover; */
+  /*  -o-background-size: cover; */
+  /*  background-size: cover; */
 }
 
 /* @import 'bootstrap.less'; */
