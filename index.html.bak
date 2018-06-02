@@ -20,7 +20,8 @@
     <!-- Custom styles for this template -->
     <link href="/css/grayscale.css" rel="stylesheet">
   </head>
-  <body id="page-top"> <!-- Navigation -->
+  <body id="page-top">
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container"> <a class="navbar-brand js-scroll-trigger" href="#page-top">Sufi
           Healing Workshop</a> <button class="navbar-toggler navbar-toggler-right"
@@ -151,11 +152,13 @@
                 any future events. I loved it."</i> - M.P., Retired Nurse</p>
             <p> <i>"I absolutely loved that we were such a diverse group."</i>
               - S.P., Antenatal Teacher and Doula</p>
-            <p><em>"I loved the teaching. I loved how Nura and Wadude shared so
-                honestly from their own life and relationships and the way they
-                brought humour into it. Alhamdulillah, for me, it made the
-                course content very easy to access."</em> - K.M., Small Business
-              Owner</p>
+            <p><em>"Nura and Wadude are incredibly sensitive and perceptive.
+                They take you on a journey to understand yourself better and to
+                make deeper connections with those around you. The teachings are
+                very simple and yet at the same time deep and profound. They are
+                also very human and funny. Where there is love there is laughter
+                and where there is love there is self discovery."</em> - K.M.,
+              Small Business Owner</p>
             <p><em>"What I appreciated most about Nura and Wadude’s teaching was
                 the humility and lack of ego, the humour and humanity, and their
                 honesty and sincerity." - anonymous</em></p>
@@ -371,6 +374,13 @@ name="Names of non-attending children" id="full-names-children"></textarea> </di
 name="Special requests" id="special-requests"></textarea> </div>
           </div>
           <div class="form-group row">
+            <div class="col-3"></div>
+            <div class="col-6"> <label for="final-hidden-field"></label> <textarea
+
+class="form-control" name="Final hidden field" id="final-hidden-field" display:none></textarea>
+            </div>
+          </div>
+          <div class="form-group row">
             <div class="col-6 mx-auto">
               <p>Once we receive your registration, we will be in contact to
                 provide information about payment.</p>
@@ -421,5 +431,6 @@ name="Special requests" id="special-requests"></textarea> </div>
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script> -->
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
+    
   </body>
 </html>
