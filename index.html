@@ -17,6 +17,23 @@
       type="text/css">
     <!-- Custom styles for this template -->
     <link href="/css/grayscale.css" rel="stylesheet">
+    <script>
+      function recalculate() {
+          accommodationCost = document.getElementById('accommodation-cost');
+          accommodationNumAdults = document.getElementById('accommodation-num-adults');
+          accommodationNumChildren = document.getElementById('accommodation-num-children');
+          accommodationCost.value=30*parseInt(accommodationNumChildren.value)+65*parseInt(accommodationNumAdults.value);
+      
+          workshopTotal = document.getElementById('workshop-total');
+          workshopNumAdults = document.getElementById('workshop-num-adults');
+          workshopNumCouples = document.getElementById('workshop-num-couples');
+          donation = document.getElementById('donation');
+          workshopTotal.value=110*parseInt(workshopNumAdults.value)+180*parseInt(workshopNumCouples.value)+parseInt(donation.value);
+          
+          total = document.getElementById('total');
+          total.value=parseInt(accommodationCost.value)+parseInt(workshopTotal.value);
+      }
+    </script>
   </head>
   <body id="page-top">
     <!-- Navigation -->
@@ -305,7 +322,7 @@
         <!-- <div class="row"> -->
         <!--   <div class="col"> -->
         <form action="https://formspree.io/daoud.clarke%2Bsufihealing@gmail.com"
-          method="POST" oninput="accommodationCost.value=30*parseInt(accommodationNumChildren.value)+65*parseInt(accommodationNumAdults.value)">
+          method="POST" oninput="recalculate()">
           <div class="form-group row">
             <div class="col-lg-6 mx-auto"> <label for="user-name">Name</label>
 	      <input class="form-control" id="user-name" name="name"
@@ -372,6 +389,18 @@
             <label for="donation" class="col-4 col-form-label">Additional donation</label>
             <div class="col-2"> <input class="form-control" value="0" name="Additional donation"
                 id="donation" type="number"> </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-3"></div>
+            <label for="workshop-total" class="col-4 col-form-label">Total for tuition:</label>
+            <div class="col-2"> £<output for="workshop-num-adults workshop-num-couples" value="0" name="workshopTotal"
+                id="workshop-total" type="number"> </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-3"></div>
+            <label for="total" class="col-4 col-form-label">TOTAL (accommodation & tuition):</label>
+            <div class="col-2"> £<output for="accommodation-cost workshop-total" value="0" name="workshopTotal"
+                id="total" type="number"> </div>
           </div>
           <div class="form-group row">
             <div class="col-3"></div>
