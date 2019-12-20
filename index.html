@@ -17,7 +17,31 @@
       type="text/css">
     <!-- Custom styles for this template -->
     <link href="/css/grayscale.css" rel="stylesheet">
+    <script src="vendor/jquery/jquery.min.js"></script>
     <script>
+      $(document).ready(function() {
+      // this is the id of the form
+      $("#registration-form").submit(function(e) {
+
+      e.preventDefault(); // avoid to execute the actual submit of the form.
+
+      var form = $(this);
+      var url = form.attr('action');
+
+      $.ajax({
+      type: "POST",
+      url: url,
+      data: form.serialize(), // serializes the form's elements.
+      success: function(data)
+      {
+      alert("Your registration has been submitted successfully, thank you!"); // show response from the php script.
+      }
+      });
+      });
+
+
+      });
+
       function parseOrZero(s) {
           return parseInt(s) || 0;
       }
@@ -328,7 +352,7 @@
         <!-- <div class="row"> -->
         <!--   <div class="col"> -->
         <form action="https://hooks.zapier.com/hooks/catch/6343360/ott7ghy/"
-          method="POST" oninput="recalculate()">
+          id="registration-form" method="POST" oninput="recalculate()">
           <div class="form-group row">
             <div class="col-lg-6 mx-auto"> <label for="user-name">Name</label>
 	      <input class="form-control" id="user-name" name="name"
@@ -467,7 +491,6 @@ id="final-hidden-field" style="display:none;"></textarea> </div>
       </div>
     </footer>
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <!-- Plugin JavaScript -->
